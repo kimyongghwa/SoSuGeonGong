@@ -1,0 +1,39 @@
+﻿  stdafx.cpp
+  Animation.cpp
+  Application.cpp
+  Console.cpp
+  InputManager.cpp
+C:\Users\Sunrin\Desktop\SoSuGeonGong\YAMAENGINE_4일차\YAMAENGINE\InputManager.cpp(43,27): warning C4244: '인수': 'LONG'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Sunrin\Desktop\SoSuGeonGong\YAMAENGINE_4일차\YAMAENGINE\InputManager.cpp(43,22): warning C4244: '인수': 'LONG'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  MainScene.cpp
+  Object.cpp
+C:\Users\Sunrin\Desktop\SoSuGeonGong\YAMAENGINE_4일차\YAMAENGINE\Object.cpp(51,17): warning C4244: '+=': 'FLOAT'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Sunrin\Desktop\SoSuGeonGong\YAMAENGINE_4일차\YAMAENGINE\Object.cpp(52,18): warning C4244: '+=': 'FLOAT'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Sunrin\Desktop\SoSuGeonGong\YAMAENGINE_4일차\YAMAENGINE\Object.cpp(53,16): warning C4244: '+=': 'FLOAT'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Sunrin\Desktop\SoSuGeonGong\YAMAENGINE_4일차\YAMAENGINE\Object.cpp(54,19): warning C4244: '+=': 'FLOAT'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Sunrin\Desktop\SoSuGeonGong\YAMAENGINE_4일차\YAMAENGINE\Object.cpp(55,17): warning C4244: '+=': 'FLOAT'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Sunrin\Desktop\SoSuGeonGong\YAMAENGINE_4일차\YAMAENGINE\Object.cpp(56,18): warning C4244: '+=': 'FLOAT'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Sunrin\Desktop\SoSuGeonGong\YAMAENGINE_4일차\YAMAENGINE\Object.cpp(57,16): warning C4244: '+=': 'FLOAT'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Sunrin\Desktop\SoSuGeonGong\YAMAENGINE_4일차\YAMAENGINE\Object.cpp(58,19): warning C4244: '+=': 'FLOAT'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Sunrin\Desktop\SoSuGeonGong\YAMAENGINE_4일차\YAMAENGINE\Object.cpp(64,15): warning C4244: '+=': 'FLOAT'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Sunrin\Desktop\SoSuGeonGong\YAMAENGINE_4일차\YAMAENGINE\Object.cpp(65,16): warning C4244: '+=': 'FLOAT'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Sunrin\Desktop\SoSuGeonGong\YAMAENGINE_4일차\YAMAENGINE\Object.cpp(66,14): warning C4244: '+=': 'FLOAT'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Sunrin\Desktop\SoSuGeonGong\YAMAENGINE_4일차\YAMAENGINE\Object.cpp(67,17): warning C4244: '+=': 'FLOAT'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Sunrin\Desktop\SoSuGeonGong\YAMAENGINE_4일차\YAMAENGINE\Object.cpp(78,12): warning C4244: 'return': 'FLOAT'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Sunrin\Desktop\SoSuGeonGong\YAMAENGINE_4일차\YAMAENGINE\Object.cpp(81,12): warning C4244: 'return': 'FLOAT'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Sunrin\Desktop\SoSuGeonGong\YAMAENGINE_4일차\YAMAENGINE\Object.cpp(87,10): warning C4244: '=': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Sunrin\Desktop\SoSuGeonGong\YAMAENGINE_4일차\YAMAENGINE\Object.cpp(88,10): warning C4244: '=': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  Scene.cpp
+  SceneManager.cpp
+  SoundManager.cpp
+  Sprite.cpp
+C:\Users\Sunrin\Desktop\SoSuGeonGong\YAMAENGINE_4일차\YAMAENGINE\Sprite.cpp(38,48): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Sunrin\Desktop\SoSuGeonGong\YAMAENGINE_4일차\YAMAENGINE\Sprite.cpp(38,35): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  TextureManager.cpp
+  main.cpp
+  코드를 생성하고 있습니다.
+  12 of 220 functions ( 5.5%) were compiled, the rest were copied from previous compilation.
+    4 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  코드를 생성했습니다.
+  YAMAENGINE.vcxproj -> C:\Users\Sunrin\Desktop\SoSuGeonGong\YAMAENGINE_4일차\Release\YAMAENGINE.exe
