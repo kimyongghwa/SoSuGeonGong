@@ -2,6 +2,7 @@
 #include "Scene.h"
 #include "Sprite.h"
 #include "Animation.h"
+#include "MainScene.h"
 #include <list>
 
 class GameScene :
