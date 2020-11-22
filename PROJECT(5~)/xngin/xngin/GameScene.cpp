@@ -7,7 +7,7 @@ GameScene::GameScene() {
 	isJump = false;
 	doubleJump = false;
 	score = 0;
-
+	/*
 	backgroundList.push_back(new Sprite("Resources/Sprites/Background.png"));
 	Sprite* tmpBackground = new Sprite("Resources/Sprites/Background2.png");
 	tmpBackground->setPos(SCREEN_WIDTH,0);
@@ -29,8 +29,14 @@ GameScene::GameScene() {
 	Sprite* tmpObstacle = new Sprite("Resources/Sprites/Drop.png");
 	tmpObstacle->setPos(SCREEN_WIDTH, 500);
 	obstacleList.push_back(tmpObstacle);
-
+	*/
+	body = new Sprite("Resources/Sprites/body3.png");
+	body->setPos(512-354, 120);
+	left_Hand = new Animation(50);
+	left_Hand->AddFrame("Resources/Sprites/Hand5.png");
+	left_Hand->setPos(512 - 354, 120);
 	player = new Animation(50);
+	
 	player->AddFrame("Resources/Sprites/player1.png");
 	player->AddFrame("Resources/Sprites/player2.png");
 	player->setPos(50, 100);
@@ -43,6 +49,7 @@ GameScene::~GameScene() {
 
 }
 void GameScene::Render() {
+	/*
 	for (auto& background : backgroundList) {
 		background->Render();
 	}
@@ -58,12 +65,15 @@ void GameScene::Render() {
 	for (int i = 0; i < 4; i++) {
 		numArray[i].Render();
 	}
+	*/
+	body->Render();
+	left_Hand->Render();
 	player->Render();
 }
 void GameScene::Update(float dTime) {
 	Scene::Update(dTime);
 	int randNum = rand() % 10 + 1;
-
+	/*
 	if ((rand() % 10 + 1) == 1) {
 		Sprite* tmpCoin = new Sprite("Resources/Sprites/coin-yellow.png");
 		tmpCoin->setPos(SCREEN_WIDTH + 100, 400);
@@ -73,7 +83,7 @@ void GameScene::Update(float dTime) {
 	numArray[1].setNum(score / 100 % 10);
 	numArray[2].setNum(score / 10 % 10 );
 	numArray[3].setNum(score % 10);
-;
+	*/
 	//player->setPos(player->getPosX(), player->getPosY() + gravity * dTime);
 	//if (isJump) {
 	//	player->setPos(player->getPosX(), player->getPosY() - 360 * dTime);
@@ -95,6 +105,7 @@ void GameScene::Update(float dTime) {
 	//		gravity = 0;
 	//	}
 	//}
+/*
 	player->setPos(inputManager->GetMousePos());
 
 	player->Update(dTime);
@@ -177,5 +188,6 @@ void GameScene::Update(float dTime) {
 			}
 		}
 	}
+	*/
 
 }

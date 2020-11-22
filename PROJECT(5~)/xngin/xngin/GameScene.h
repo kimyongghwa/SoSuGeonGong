@@ -8,7 +8,11 @@
 class GameScene : public Scene
 {
 private:
-	
+	Sprite* body;
+	Animation* left_Hand;
+	Animation* right_Hand;
+	Sprite* left_Leg;
+	Sprite* right_Leg;
 	Animation* player;
 	std::list<Sprite*> backgroundList;
 	std::list<Sprite*> bridgeList;

@@ -6,19 +6,19 @@ MainScene::MainScene() {
 	AddObject(background);
 	background->setPos(0, 0);
 
-	title = new Sprite("Resources/Sprites/Title.png");
+	title = new Sprite("Resources/Sprites/joonsim.png");
 	AddObject(title);
-	title->setPos(275, SCREEN_HEIGHT / 10);
+	title->setPos(500, 30);
 
 	startButton = new Sprite("Resources/Sprites/start.png");
 
 	AddObject(startButton);
-	startButton->setCenter(300, 120, startButton);
-	startButton->setPos(SCREEN_WIDTH / 2, 250);
+	//startButton->setCenter(300, 120, startButton);
+	startButton->setPos(0, 250);
 
 	exitButton = new Sprite("Resources/Sprites/exit.png");
 	AddObject(exitButton);
-	exitButton->setPos(SCREEN_WIDTH / 2, 500);
+	exitButton->setPos(0, 500);
 }
 MainScene::~MainScene() {
 	// AddObject로 추가한 오브젝트들은 자동으로 사라짐
