@@ -22,6 +22,7 @@ void Scene::Update(float dTime) {
 		ui->Update(dTime);
 	}
 }
+
 void Scene::AddObject(Object* object) {
 	objectList.push_back(object);
 	object->setParent(nullptr);

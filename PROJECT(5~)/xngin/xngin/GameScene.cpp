@@ -7,7 +7,8 @@ GameScene::GameScene() {
 	isJump = false;
 	doubleJump = false;
 	score = 0;
-	/*
+	
+/*
 	backgroundList.push_back(new Sprite("Resources/Sprites/Background.png"));
 	Sprite* tmpBackground = new Sprite("Resources/Sprites/Background2.png");
 	tmpBackground->setPos(SCREEN_WIDTH,0);
@@ -20,7 +21,6 @@ GameScene::GameScene() {
 	Sprite* tempBridge = new Sprite("Resources/Sprites/LoopMap.png");
 	tempBridge->setPos(SCREEN_WIDTH, 560);
 	bridgeList.push_back(tempBridge);
-
 	Sprite* tmpCoin = new Sprite("Resources/Sprites/coin-yellow.png");
 	tmpCoin->setPos(SCREEN_WIDTH + 70, 400);
 	coinList.push_back(tmpCoin);
@@ -32,10 +32,19 @@ GameScene::GameScene() {
 	*/
 	body = new Sprite("Resources/Sprites/body3.png");
 	body->setPos(512-354, 120);
-	left_Hand = new Animation(50);
+	left_Hand = new Animation(20);
 	left_Hand->AddFrame("Resources/Sprites/Hand5.png");
+	left_Hand->AddFrame("Resources/Sprites/Hand10.png");
 	left_Hand->setPos(512 - 354, 120);
-	player = new Animation(50);
+	right_Hand = new Animation(20);
+	right_Hand->AddFrame("Resources/Sprites/Hand15.png");
+	right_Hand->AddFrame("Resources/Sprites/Hand20.png");
+	right_Hand->setPos(512 - 354, 120);
+	left_Leg = new Sprite("Resources/Sprites/leg5.png");
+	left_Leg->setPos(512 - 354, 120);
+	right_Leg = new Sprite("Resources/Sprites/leg10.png");
+	right_Leg->setPos(512 - 354, 120);
+	player = new Animation(20);
 	
 	player->AddFrame("Resources/Sprites/player1.png");
 	player->AddFrame("Resources/Sprites/player2.png");
@@ -66,12 +75,16 @@ void GameScene::Render() {
 		numArray[i].Render();
 	}
 	*/
+	right_Leg->Render();
 	body->Render();
 	left_Hand->Render();
-	player->Render();
+	right_Hand->Render();
+	left_Leg->Render();
 }
 void GameScene::Update(float dTime) {
 	Scene::Update(dTime);
+	left_Hand->Update(dTime);
+	right_Hand->Update(dTime);
 	int randNum = rand() % 10 + 1;
 	/*
 	if ((rand() % 10 + 1) == 1) {

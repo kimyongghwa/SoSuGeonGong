@@ -17,6 +17,7 @@ public:
 	void Render();
 	int getWidth();
 	int getHeight();
+	void setScale(float x, float y);
 	D3DCOLOR getColor();
 	void setColor(D3DCOLOR color);
 	void setCenter(int width, int height, Sprite* sprite);

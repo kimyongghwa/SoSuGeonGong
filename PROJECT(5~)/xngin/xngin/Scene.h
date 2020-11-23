@@ -10,7 +10,7 @@ public:
 	~Scene();
 	virtual void Render();
 	virtual void Update(float dTime);
-
+	
 	void AddObject(Object* object);
 	void RemoveObject(Object* object);
 };
