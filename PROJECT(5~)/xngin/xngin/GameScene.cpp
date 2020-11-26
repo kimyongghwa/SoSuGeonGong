@@ -7,7 +7,6 @@ GameScene::GameScene() {
 	isJump = false;
 	doubleJump = false;
 	score = 0;
-	
 /*
 	backgroundList.push_back(new Sprite("Resources/Sprites/Background.png"));
 	Sprite* tmpBackground = new Sprite("Resources/Sprites/Background2.png");
@@ -99,6 +98,12 @@ void GameScene::Update(float dTime) {
 	left_Hand->Update(dTime);
 	right_Hand->Update(dTime);
 	int randNum = rand() % 10 + 1;
+	if (inputManager->GetKeyState(VK_LBUTTON) == KEY_DOWN) {
+		if (body_Button->IsPointInRect(inputManager->GetMousePos())) {
+			PostQuitMessage(0);
+			return;
+		}
+	}
 	/*
 	if ((rand() % 10 + 1) == 1) {
 		Sprite* tmpCoin = new Sprite("Resources/Sprites/coin-yellow.png");

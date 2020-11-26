@@ -8,9 +8,9 @@
 class GameScene : public Scene
 {
 private:
-	int levelArray[5];
-	int nowClickArray[5];
-	int needClickArray[5];
+	int levelArray[5] = { 0, };
+	int nowClickArray[5] = { 0, };
+	int needClickArray[5] = { 0, };
 	Sprite* body;
 	Animation* left_Hand;
 	Animation* right_Hand;
