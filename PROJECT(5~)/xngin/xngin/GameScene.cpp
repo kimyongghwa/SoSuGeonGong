@@ -46,10 +46,18 @@ GameScene::GameScene() {
 	right_Leg->setPos(512 - 354, 120);
 	player = new Animation(20);
 	
-	player->AddFrame("Resources/Sprites/player1.png");
-	player->AddFrame("Resources/Sprites/player2.png");
-	player->setPos(50, 100);
 	
+	
+	left_Hand_Button = new Sprite("Resources/Sprites/PowerUp.png");
+	left_Hand_Button->setPos(150,300);
+	right_Hand_Button = new Sprite("Resources/Sprites/PowerUp.png");
+	right_Hand_Button->setPos(1024-150, 300);
+	left_Leg_Button = new Sprite("Resources/Sprites/PowerUp.png");
+	left_Leg_Button->setPos(200, 500);
+	right_Leg_Button = new Sprite("Resources/Sprites/PowerUp.png");
+	right_Leg_Button->setPos(1024 - 200,500);
+	body_Button = new Sprite("Resources/Sprites/PowerUp.png");
+	body_Button->setPos(512 - 37, 150);
 	for (int i = 0; i < 4; i++) {
 		numArray[i].setPos(0 + 60 * i, 10);
 	}
@@ -80,6 +88,11 @@ void GameScene::Render() {
 	left_Hand->Render();
 	right_Hand->Render();
 	left_Leg->Render();
+	left_Hand_Button->Render();
+	right_Hand_Button->Render();
+	left_Leg_Button->Render();
+	right_Leg_Button->Render();
+	body_Button->Render();
 }
 void GameScene::Update(float dTime) {
 	Scene::Update(dTime);
